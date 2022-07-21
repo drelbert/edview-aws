@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 export const Navigation = ({ children }) => {
   return (
@@ -14,8 +14,8 @@ export const NavigationLink = ({ children, to }) => {
       to={to}
       className={({ isActive }) =>
         isActive
-          ? 'bg-slate-600 hover:bg-slate-500'
-          : 'bg-white hover:bg-slate-100'
+          ? "bg-slate-600 hover:bg-slate-500"
+          : "bg-white hover:bg-slate-100"
       }
     >
       <article className="w-full p-4">{children}</article>

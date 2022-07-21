@@ -1,43 +1,24 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
-import { Navigation, NavigationLink } from './Navigation';
-import { Page } from './Page';
+import { Page } from "./Page";
+
+import Header from "./Header";
+import Home from "./Home";
+import Dashboard from "./Dashboard";
+import SearchTalent from "./SearchTalent";
 
 function Application() {
   return (
     <main className="h-screen">
-      <h1 className="text-3xl font-bold bg-slate-300 p-4 border-b-2 border-slate-400">
-        Incredibly Important 
-      </h1>
-      <div className="grid grid-cols-12 grid-rows-1 gap-4 h-full">
-        <Navigation>
-          <NavigationLink to="/">Home</NavigationLink>
-          <NavigationLink to="/notes/hipster">Hipster Ipsum</NavigationLink>
-          <NavigationLink to="/notes/zombie">Zombie Ipsum</NavigationLink>
-          <NavigationLink to="/notes/cupcake">Cupcake Ipsum</NavigationLink>
-          <NavigationLink to="/notes/cheese">Cheese Ipsum</NavigationLink>
-          <NavigationLink to="/notes/cat">Cat Ipsum</NavigationLink>
-          <NavigationLink to="/notes/office">Office Ipsum</NavigationLink>
-          <NavigationLink to="/notes/beatles">The Beatles</NavigationLink>
-        </Navigation>
-        <section className="col-span-9 p-4">
-          <Routes>
-            <Route
-              path="/notes/beatles"
-              element={
-                <div>
-                  <img
-                    src="/beatles.jpg"
-                    alt="Possibly the Beatles, possibly"
-                  />
-                </div>
-              }
-            />
-            <Route path="/notes/:id" element={<Page />} />
-            <Route path="/" element={<p>Select a note.</p>} />
-          </Routes>
-        </section>
-      </div>
+      <Header />
+      <section className="col-span-9 p-4">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/edView/:id" element={<Page />} />
+          <Route path="/search" element={<SearchTalent />} />
+        </Routes>
+      </section>
     </main>
   );
 }

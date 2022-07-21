@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Hugo",
+    "id": 303,
+    "department": "engineering",
+    "skill": "JavaScript",
+    "specialization": "front-end"
+  },
+  {
+    "name": "Maria",
+    "id": 598,
+    "department": "design",
+    "skill": "UX",
+    "specialization": "user research"
+  },
+  {
+    "name": "Hapi",
+    "id": 999,
+    "department": "engineering",
+    "skill": "Node.js",
+    "specialization": "full-stack"
+  }
+]
