@@ -20,7 +20,7 @@ function Header() {
           Dashboard
         </a>
         <a
-          href="/addStudent"
+          href="/manage"
           className="text-base font-medium text-gray-500 hover:text-gray-900"
         >
           Manage
@@ -32,13 +32,13 @@ function Header() {
           Search
         </a>
         <a
-          href="/userProfile"
+          href="/manage"
           className="text-base font-medium text-gray-500 hover:text-gray-900"
         >
           My Profile
         </a>
         <a
-          href="/support"
+          href="/manage"
           className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
         >
           Insights

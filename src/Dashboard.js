@@ -43,11 +43,11 @@ const Dashboard = () => {
                   <Doughnut data={data} />
                 </div>
                 <div className="basis-1/3  ">
-                  <h3 className="text-center">Current User Data</h3>
+                  <h3 className="text-center">ToDo Data</h3>
                   <Doughnut data={data} />
                 </div>
                 <div className="basis-1/3 ">
-                  <h3 className="text-center">Current User Data</h3>
+                  <h3 className="text-center">Placeholder Data</h3>
                   <Doughnut data={data} />
                 </div>
               </div>
